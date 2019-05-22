@@ -1,0 +1,16 @@
+<resources>
+    <string name="allowed">Allowed attempts</string>
+    <string name="actual">Actual Death</string>
+    <string name="expect">You expect</string>
+    <string name="app_name">Death Writer</string>
+    <string name="age">Original age</string>
+    <string name="guess">Your guess</string>
+    <string name="compare">Compare</string>
+    <string name="hint1">between 1 and 100</string>
+    <string name="hint2">between 1 and 100</string>
+    <string name="lost">You lost GAME OVER</string>
+    <string name="no">Number of attempts</string>
+    <string name="less">Try Again! Your guess is lower than actual age</string>
+    <string name="more">Try Again! Your guess is higher than actual age</string>
+    <string name="exact">Perfect guess   YOU WIN</string>
+</resources>
