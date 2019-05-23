@@ -2,7 +2,7 @@
     <string name="allowed">Allowed attempts</string>
     <string name="actual">Actual Death</string>
     <string name="expect">You expect</string>
-    <string name="app_name">Death Writer</string>
+    <string name="app_name">Death Approximator</string>
     <string name="age">Original age</string>
     <string name="guess">Your guess</string>
     <string name="compare">Compare</string>
