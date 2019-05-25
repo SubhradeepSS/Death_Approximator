@@ -16,4 +16,4 @@
      iii.Displays a loss if user does not guess the correct age within the number of allowed attempts.
      iv. Shows the number of successful and failure attempts after each try.
 #### c. Display
-       Has different layouts for portrait and landscape modes
+     Has different layouts for portrait and landscape modes
