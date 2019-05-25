@@ -2,7 +2,7 @@
 
 ## An app to help you guess the correct age of death
 
-### Features
+### Features :-
 
 #### a. Input
     The app takes 3 inputs:
