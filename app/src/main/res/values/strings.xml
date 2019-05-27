@@ -6,6 +6,8 @@
     <string name="age">Original age</string>
     <string name="guess">Your guess</string>
     <string name="compare">Compare</string>
+    <string name="savedata">Save Data</string>
+    <string name="reset">Reset</string>
     <string name="hint1">between 1 and 100</string>
     <string name="hint2">between 1 and 100</string>
     <string name="lost">You lost GAME OVER</string>

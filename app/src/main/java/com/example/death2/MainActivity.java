@@ -2,36 +2,93 @@ package com.example.death2;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.view.View.OnClickListener;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.ScrollView;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.EditText;
+import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
 
     public float b=0;
-    public int w=0;
-    public int l=0;
+     public  static int w;
+     public static int l;
     public EditText x;
     private EditText age;
     private EditText guess;
     private TextView compare;
-
+    public Button btn;
+    public Button b2,b3;
+    public Switch switch1;
+    public static final String Shared_prefs="sharedprefs";
+    public static final String win="w";
+    public static final String loss="l";
+    public static final String s1="switch1";
+    public boolean switchonoff;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        age=(EditText)findViewById(R.id.age);
-        guess=(EditText)findViewById(R.id.guess);
-        compare=(TextView)findViewById(R.id.compare);
-        x=(EditText)findViewById(R.id.no);
+        age = (EditText) findViewById(R.id.age);
+        guess = (EditText) findViewById(R.id.guess);
+        compare = (TextView) findViewById(R.id.compare);
+        x = (EditText) findViewById(R.id.no);
+        switch1 =(Switch)findViewById(R.id.switch1);
+        btn=(Button)findViewById(R.id.btn);
+        b2=(Button)findViewById(R.id.b2);
+        b3=(Button)findViewById((R.id.b3));
 
+        b2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                savedata();
+            }
+        });
+         loaddata();
+         update();
+
+         b3.setOnClickListener(new View.OnClickListener(){
+             @Override
+             public void onClick(View v){
+                 w=0;
+                 l=0;
+                 Toast.makeText(getApplicationContext(),"Data reset",Toast.LENGTH_SHORT).show();
+             }
+         });
+    }
+
+
+    public  void  savedata(){
+         SharedPreferences sharedPreferences=getSharedPreferences(Shared_prefs,MODE_PRIVATE);
+         SharedPreferences.Editor editor=sharedPreferences.edit();
+         editor.putInt(win,w);
+         editor.putInt(loss,l);
+         editor.putBoolean(s1,switch1.isChecked());
+         editor.apply();
+        Toast.makeText(this,"Data Saved",Toast.LENGTH_SHORT).show();
+    }
+
+    public  void loaddata(){
+        SharedPreferences sharedPreferences=getSharedPreferences(Shared_prefs,MODE_PRIVATE);
+        w=sharedPreferences.getInt(win,0);
+        l=sharedPreferences.getInt(loss,0);
+        switchonoff=sharedPreferences.getBoolean(s1,true);
+    }
+    public void update()
+    {
+        switch1.setChecked(switchonoff);
     }
 
     public void compare(View v)

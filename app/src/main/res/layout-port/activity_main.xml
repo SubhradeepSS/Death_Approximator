@@ -17,9 +17,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:gravity="center_horizontal"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textColor="#212121"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="32dp"
         />
     <EditText
         android:id="@+id/no"
@@ -30,7 +30,7 @@
         android:textColor="#0d47a1"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
-        android:textSize="20sp"
+        android:textSize="18sp"
         />
 
     <TextView
@@ -39,9 +39,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:gravity="center_horizontal"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textColor="#212121"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="35dp"
         />
     <EditText
         android:id="@+id/age"
@@ -54,7 +54,7 @@
         android:ems="6"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
-        android:textSize="20sp"
+        android:textSize="18sp"
         />
 
     <TextView
@@ -63,9 +63,9 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:gravity="center_horizontal"
-        android:textSize="20sp"
+        android:textSize="18sp"
         android:textColor="#212121"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="35dp"
         />
     <EditText
         android:id="@+id/guess"
@@ -78,18 +78,39 @@
         android:textColorHint="#a1887f"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
-        android:textSize="20sp"
+        android:textSize="18sp"
         />
     <Button
         android:id="@+id/btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="25dp"
         android:text="@string/compare"
         android:textColor="#004d40"
         android:onClick="compare"
         />
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        />
+    <Button
+        android:id="@+id/b2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/savedata"
+        android:layout_gravity="right"
+        android:textColor="#1a237e"/>
+
+    <Button
+    android:id="@+id/b3"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/reset"
+        android:layout_gravity="right"
+        android:textColor="#263238" />
 
     <TextView
         android:id="@+id/compare"
@@ -97,8 +118,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:gravity="center_horizontal"
-        android:layout_marginTop="25dp"
-        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
         android:textColor="#3e2723"
         />
 </LinearLayout>
