@@ -15,5 +15,8 @@
      ii.Changes the background colour depending on the accuracy of guess (more red for more wrong value and more green for more precise value).
      iii.Displays a loss if user does not guess the correct age within the number of allowed attempts.
      iv. Shows the number of successful and failure attempts after each try.
+     v. The button " Save Data " can be used to save the number of successful and failure attempts for future.
+     vi. The button " Reset " can be used for resetting the values of successful and failure attempts to zero.
+     
 #### c. Display
      Has different layouts for portrait and landscape modes
