@@ -1,6 +1,6 @@
 # Number_Approximator
 
-## An app to help you guess the correct anumber
+## An app to help you guess the correct number
 
 ### a. Input
    * Number of allowed attempts (hidden)
